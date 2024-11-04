@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main, header, nav, article, div, section {
+    border: 1px solid lightgrey;
+}
+
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffcc66;
+    text-align: center;
+    background: #339900;
+    padding: 5px;
+    display: inline-block;
+    width: 150px;
+}
+
+nav a:hover {
+    background: #66cc00;
+    color: #ff3300;
+}
+
+#aktiv {
+    color: #ffff33;
+    background: #66cc00;
+}
+
+#aktiv:hover {
+    color: #ff3300;
+    background: #66cc00;
+}
+
+article {
+    padding: 5px;
+    background-color: black;
+}
+
+article div {
+    text-align: center;
+    color: lightgrey;
+}
+
+main h1 {
+    padding: 10px;
+    color: #339900;
+}
+
+article {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+article div:nth-child(4) { /*Az első div helye */
+    grid-column-start: 1; /*kezdő oszlop */
+    grid-column-end: 1; /*utolsó utáni oszlop */
+    grid-row-start: 1; /*kezdő sor */
+    grid-row-end: 1; /*utolsó utáni sor */
+    }
+
+article div:nth-child(2) { /*Az első div helye */
+    grid-column-start: 1; /*kezdő oszlop */
+    grid-column-end: 1; /*utolsó utáni oszlop */
+    grid-row-start: 2; /*kezdő sor */
+    grid-row-end: 3; /*utolsó utáni sor */
+    }
+    
+article div:nth-child(10) { /*Az első div helye */
+    grid-column-start: 1; /*kezdő oszlop */
+    grid-column-end: 1; /*utolsó utáni oszlop */
+    grid-row-start: 3; /*kezdő sor */
+    grid-row-end: 4; /*utolsó utáni sor */
+    }
+
+article div:nth-child(6) { /*Az első div helye */
+    grid-column-start: 2; /*kezdő oszlop */
+    grid-column-end: 3; /*utolsó utáni oszlop */
+    grid-row-start: 1; /*kezdő sor */
+    grid-row-end: 2; /*utolsó utáni sor */
+    }
+
+article div:nth-child(3) { /*Az első div helye */
+    grid-column-start: 2; /*kezdő oszlop */
+    grid-column-end: 3; /*utolsó utáni oszlop */
+    grid-row-start: 2; /*kezdő sor */
+    grid-row-end: 3; /*utolsó utáni sor */
+    }
+
+article div:nth-child(8) { /*Az első div helye */
+    grid-column-start: 2; /*kezdő oszlop */
+    grid-column-end: 3; /*utolsó utáni oszlop */
+    grid-row-start: 3; /*kezdő sor */
+    grid-row-end: 4; /*utolsó utáni sor */
+    }
+
+article div:nth-child(5) { /*Az első div helye */
+    grid-column-start: 3; /*kezdő oszlop */
+    grid-column-end: 4; /*utolsó utáni oszlop */
+    grid-row-start: 2; /*kezdő sor */
+    grid-row-end: 3; /*utolsó utáni sor */
+    }
+
+article div:nth-child(7) { /*Az első div helye */
+    grid-column-start: 3; /*kezdő oszlop */
+    grid-column-end: 4; /*utolsó utáni oszlop */
+    grid-row-start: 3; /*kezdő sor */
+    grid-row-end: 4; /*utolsó utáni sor */
+    }
+
+article div:nth-child(9) { /*Az első div helye */
+    grid-column-start: 4; /*kezdő oszlop */
+    grid-column-end: 5; /*utolsó utáni oszlop */
+    grid-row-start: 2; /*kezdő sor */
+    grid-row-end: 3; /*utolsó utáni sor */
+    }
+
+article div:nth-child(1) { /*Az első div helye */
+    grid-column-start: 4; /*kezdő oszlop */
+    grid-column-end: 5; /*utolsó utáni oszlop */
+    grid-row-start: 4; /*kezdő sor */
+    grid-row-end: 5; /*utolsó utáni sor */
+    }

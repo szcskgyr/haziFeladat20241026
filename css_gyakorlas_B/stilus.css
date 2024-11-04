@@ -1,0 +1,57 @@
+nav {
+    grid-area: me;
+    border-bottom: double 3px black;
+    padding-top: 0px;
+}
+
+main {
+    grid-area: fo;
+    border-bottom: double 3px black;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#baltartalom {
+    grid-area: ba;
+    border: 1px dashed black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#jobbtartalom {
+    grid-area: jo;
+    text-align: right;
+    border-bottom: double 3px black;
+}
+
+#keszito {
+    grid-area: ke;
+    text-align: right;
+    }
+
+#osztaly {
+    grid-area: osz;
+    border-left: 1px solid black;
+    text-align: center;
+}
+
+footer {
+    grid-area: el;
+}
+
+#tartalom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'ba me me jo'
+    'ba fo fo fo'
+    'ke ke ke osz'
+    'el el el el'
+    ;
+}
+
+div>* {
+    padding-left: 10px;
+    padding-right: 10px;
+}
